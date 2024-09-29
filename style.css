@@ -1,0 +1,247 @@
+
+#header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(banner.png);
+background-position: centre;
+background-size: cover;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;}
+
+nav img{
+    width: 150px;
+}
+.links{
+    flex: 1;
+    text-align: right;
+}
+.links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.links ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 13px;
+}
+.links ul li::after{
+content:'' ;
+width: 0%;
+height: 2px;
+background-color: brown;
+display: block;
+margin: auto;
+transition: 0.5s;
+}
+.links ul li:hover::after{
+    width: 100%;
+}
+.text{
+    width: 90%;
+    color: rgb(252, 8, 170);
+    position: absolute;
+    top: 45%;
+    
+    text-align: center;
+
+}
+.text h1{
+  font-size: 62Px;
+
+}
+.text p{
+    margin: 10px 0 40px;
+    font-size: 19px;
+    color: #ffd900;
+    font-weight: bold;
+    
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(122, 247, 5);
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+background-color: transparent;
+position: relative;
+cursor: pointer;
+}
+.btn:hover{
+    border: 1px solid red;
+    background-color: red;
+    transition: 1s;
+}
+nav .fa{
+display: none;
+}
+@media(max-width:700px) {
+    .text h1{
+        font-size: 20px;
+    }
+    .links ul li{
+        display: none;
+    }
+    .links{
+        position: absolute;
+        background:rgb(235, 14, 14) ;
+        height: 100hv;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+} 
+.course{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    background-color: bisque;
+
+}
+.course h1{
+    font-size: 36px;
+    font-weight: 600;
+    font-weight: bold;
+    color: rgb(14, 255, 6);
+    
+}
+.course p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    color: rgb(0, 38, 255);
+    font-size: large;
+}
+.row{
+    display: flex;
+    background-color: rgb(51, 255, 0);
+    
+}
+.course-col{
+    flex-basis: 31%;
+    background-color: rgb(0, 255, 255);
+    border-radius: 10px;
+    margin: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col:hover{
+    box-shadow:blue;
+}
+.campus{
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img{
+ width: 100%;   
+}
+.layer{
+  background-color:transparent;  
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition:0.5s ;
+}
+.layer:hover{
+   background: rgb(241, 241, 241); 
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: brown;
+    left: 50%;
+    bottom: 0;
+    transform: translatex(-50%);
+    position: absolute;
+}
+.layer:hover h3{
+    
+color: blue;
+}
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 100px;
+}
+.facilities h3{
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+.facilities-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.cta{
+margin: 100px auto;
+width: 80%;
+background-image: url(/banner2.jpg);
+background-position: center;
+background-size: cover;
+border-radius: 10px;
+text-align: center;
+padding: 100px 0;
+background-color: chartreuse;
+color: rgb(255, 0, 0);
+}
+.cta h2{
+    color: #fff;
+    margin-bottom: 40px;
+    padding:0 ;
+}
+
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: chartreuse;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 28px;
+    font-weight: 600;
+}
+
